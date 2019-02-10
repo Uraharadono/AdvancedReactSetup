@@ -7,7 +7,7 @@ class App extends React.Component {
         // const routeComponents = routes.map(({ path, exact, component }, key) => <Route exact={exact} path={path} component={component} key={key} />);
 
         return (
-            <h1> Sta je picke</h1>
+            <h1> It works !!</h1>
             // <Router>
             //     <div>
             //         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
