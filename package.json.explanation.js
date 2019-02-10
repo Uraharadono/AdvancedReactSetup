@@ -1,4 +1,4 @@
-/* eslint disable */
+/* eslint-disable */
 let Package_JSON_EXPLANATION = {
   "name": "ArticleMaster.Desktop",
   "version": "1.0.0",
@@ -83,6 +83,10 @@ let Package_JSON_EXPLANATION = {
     // Node.js compression middleware
     // https://github.com/expressjs/compression
     "compression": "^1.7.3",
+
+    // Visualize size of webpack output files with an interactive zoomable treemap.
+    // https://www.npmjs.com/package/webpack-bundle-analyzer
+    "webpack-bundle-analyzer": "^3.0.3",
 
     // An express-style development middleware for use with webpack bundles and allows for serving of the files emitted from webpack. This should be used for development only.
     // https://github.com/webpack/webpack-dev-middleware

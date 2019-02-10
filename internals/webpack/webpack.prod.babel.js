@@ -8,7 +8,8 @@ const BundleAnalyzerPlugin = BundleAnalyzer.BundleAnalyzerPlugin;
 const isAnalyze = process.argv && process.argv.includes('--analyze');
 
 function createPlugins() {
-    const chunk = new webpack.optimize.CommonsChunkPlugin({
+    // const chunk = new webpack.optimize.CommonsChunkPlugin({
+    const chunk = new webpack.optimize.SplitChunks({
         name: 'vendor',
         children: true,
         minChunks: 2,
