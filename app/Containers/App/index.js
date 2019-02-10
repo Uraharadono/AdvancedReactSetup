@@ -1,8 +1,6 @@
 import React from 'react';
 
-// eslint-disable-next-line react/prefer-stateless-function
 class App extends React.Component {
-
     render() {
         // const routeComponents = routes.map(({ path, exact, component }, key) => <Route exact={exact} path={path} component={component} key={key} />);
 

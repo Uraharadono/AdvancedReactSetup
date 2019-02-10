@@ -86,6 +86,7 @@
         "react/jsx-no-target-blank": 0,
         "react/require-extension": 0,
         "react/self-closing-comp": 0,
+        "react/prefer-stateless-function": 0,
         "require-yield": 0,
         "import/no-webpack-loader-syntax": 0
     },
