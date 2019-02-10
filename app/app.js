@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 // routes part
@@ -22,8 +22,7 @@ const render = (Component) => {
 
 // modules.hot.accept does not accept dynamic dependencies,
 // have to be constants at compile-time
-if (module.hot)
-    module.hot.accept('./Containers/App/index', () => {
+if (module.hot) module.hot.accept('./Containers/App/index', () => {
         const NextApp = require('./Containers/App/index').default; // eslint-disable-line global-require
         render(NextApp);
     });
