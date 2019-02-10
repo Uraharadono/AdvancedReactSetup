@@ -1,6 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
 
+// eslint-disable-next-line react/prefer-stateless-function
 class App extends React.Component {
 
     render() {
@@ -45,7 +45,6 @@ class App extends React.Component {
             //                             DOM elements showreel
             //                         </Link>
             //                     </li>
-
             //                 </ul>
             //             </div>
             //         </nav>
@@ -54,11 +53,8 @@ class App extends React.Component {
             //         </div>
             //     </div>
             // </Router >
-        )
+        );
     }
-
 }
-
-
 
 export default App;
