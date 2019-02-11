@@ -1,5 +1,9 @@
 import React from 'react';
 
+// We need to import our css files in javascript because that's how webpack works
+// These will be extracted to a separate file in production
+import 'sass/bundles/styles.scss';
+
 class App extends React.Component {
     render() {
         // const routeComponents = routes.map(({ path, exact, component }, key) => <Route exact={exact} path={path} component={component} key={key} />);
