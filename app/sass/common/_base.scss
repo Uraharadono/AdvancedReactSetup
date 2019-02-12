@@ -24,3 +24,15 @@ small {
     font-size: 0.8125rem;
     color: #7f8fa4;
 }
+
+a {
+	margin: 5px;
+}
+
+a, a:visited {
+	color: blue;
+}
+
+a.active {
+	color: red;
+}
