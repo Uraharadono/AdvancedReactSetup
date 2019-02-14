@@ -15,7 +15,6 @@ const render = (Component) => {
 };
 
 // ReactDOM.render(<App />, document.getElementById("app"));
-
 // modules.hot.accept does not accept dynamic dependencies,
 // have to be constants at compile-time
 if (module.hot) module.hot.accept('./containers/App/index', () => {
