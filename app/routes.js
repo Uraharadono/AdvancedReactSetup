@@ -1,12 +1,12 @@
 import PageTwo from './containers/PageTwo/index';
-import App from './containers/App/index';
+import Home from './containers/Home/index';
 
 
 const routes = [
     {
         path: '/',
         exact: true,
-        component: App,
+        component: Home,
         prettyComponentName: 'Home'
     },
     {

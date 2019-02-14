@@ -31,7 +31,7 @@ class App extends React.Component {
                     </h5>
                     <hr></hr>
                     <h4>
-                        <strong>NOTE:</strong>
+                        <strong>(THIS HAS BEEN FIXED) NOTE:</strong>
                         Currently set routes are bad way to handle this. I am referencing Home method as this component, which could cause Circular dependency.
                     </h4>
                     <h4>In best practice way &quot;/&quot; would lead to other component.</h4>
