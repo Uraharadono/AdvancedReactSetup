@@ -31,7 +31,13 @@ function handleError(error) {
 
 function createRequest(url, data, type, customHeaders = {}) {
     const info = fetchAuthInfo();
-    const absoluteUrl = API_BASE_URL + url;
+    console.log(API_BASE_URL);
+
+    // When you use "API_BASE_URL" it takes value from "webpack.base.babel.js"  from object "createApiBaseUrl.urls" depending on mode (dev or prod)
+    // const absoluteUrl = API_BASE_URL + url;
+
+    // I'll just override it here for sake of testing
+    const absoluteUrl = `https://reqres.in${url}`;
 
     const headers = {
         'Content-Type': 'application/json',
@@ -39,16 +45,18 @@ function createRequest(url, data, type, customHeaders = {}) {
         ...customHeaders
     };
 
-    if (info && info.accessToken) {
-        headers.Authorization = `Bearer ${info.accessToken}`;
-    }
+    // enable this if you have authentication on your ajax requests
+    // if (info && info.accessToken) {
+    //     headers.Authorization = `Bearer ${info.accessToken}`;
+    // }
 
     return {
         url: absoluteUrl,
         headers,
         method: type,
         data,
-        withCredentials: true
+        // withCredentials: true // enable this if you have authentication on your ajax requests
+        withCredentials: false
     };
 }
 
