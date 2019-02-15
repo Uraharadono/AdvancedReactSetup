@@ -237,6 +237,27 @@ let Package_JSON_EXPLANATION = {
     "html-webpack-plugin": "^3.2.0",
 
 
+    /* ======================================================== */
+    /* ================ UTIL FOLDER LIBRARIES  ================ */
+    /* ======================================================== */
+
+    // Promise based HTTP client for the browser and node.js (Xhr in javascript, Ajax in Jquery)
+    // https://github.com/axios/axios
+    "axios": "^0.18.0",
+
+    // A querystring parsing and stringifying library with some added security.
+    // https://www.npmjs.com/package/qs
+    // https://github.com/ljharb/qs
+    "qs": "^6.6.0",
+
+    // Modern JavaScript date utility library
+    // https://date-fns.org/
+    "date-fns": "^1.30.1",
+
+    // Parse, validate, manipulate, and display dates and times in JavaScript.
+    // https://momentjs.com/
+    "moment": "^2.24.0",
+
 
   }
 }
