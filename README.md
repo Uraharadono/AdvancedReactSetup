@@ -15,11 +15,11 @@ It is **best used as starting point for development**. If you are in need for mo
 
 **All of the explanations of packages and why/what was used in this project can be found in package.json.explanation.js file.**
 
-#### Prerequisites
+### Prerequisites
 
 You have to have node installed. If you don't, [here](https://nodejs.org/en/) is a quick link to it.
 
-#### How to run?
+### How to run?
 
 1.) Copy/Fork/Whatevaaaah this repo and go to its root. *Note: Root folder is condisered to be a folder where package.json file is located.
 
