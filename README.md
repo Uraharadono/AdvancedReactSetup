@@ -1,5 +1,5 @@
 # AdvancedReactSetup
-Advanced setup for React project using webpack, babel, eslint etc.
+* Advanced setup for React project using webpack, babel, eslint etc. *
 
 
 Hello unknown visitor. 
