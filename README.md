@@ -48,7 +48,7 @@ $ npm start
 
 Prod: 
 ```sh
-$ npm start:prod
+$ npm start:production
 ```
 
 
