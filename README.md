@@ -13,19 +13,25 @@ All of the explanations of packages and why/what was used in this project can be
 
 #### How to run?
 
-- Copy/Fork/Whatevaaaah? this repo
+1.) Copy/Fork/Whatevaaaah this repo and go to its root. *Note: Root folder is condisered to be a folder where package.json file is located.
 
-- Open CMD or something similar (powershell etc.) in root of this repo. Note: Root is where package.json file is.
+2.) Open CMD or something similar (powershell etc.) in root of this repo. Note: Root is where package.json file is.
 Type command:
 
 ```sh
 $ npm install
 ```
 
-> npm install
-
-- Commands to run enviroments (dev and production) are:
+3.) Afer installation is done you can now run app. Commands to run enviroments (development and production) are:
 
 Dev: > npm start
-Prod: > npm start:prod
+```sh
+$ npm start
+```
+
+Prod: 
+```sh
+$ npm start:prod
+```
+
 
