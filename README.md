@@ -22,6 +22,7 @@ You have to have node installed. If you don't, [here](https://nodejs.org/en/) is
 ### How to run?
 
 1.) Copy/Fork/Whatevaaaah this repo and go to its root. 
+
 *Note: Root folder is condisered to be a folder where package.json file is located.*
 
 2.) Open CMD or something similar (powershell etc.) in root of this repo. Note: Root is where package.json file is.
