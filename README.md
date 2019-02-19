@@ -25,8 +25,9 @@ You have to have node installed. If you don't, [here](https://nodejs.org/en/) is
 
 *Note: Root folder is condisered to be a folder where package.json file is located.*
 
-2.) Open CMD or something similar (powershell etc.) in root of this repo. Note: Root is where package.json file is.
-Type command:
+2.) Open CMD or something similar (powershell etc.) in root of this repo. 
+
+Type in command:
 
 ```sh
 $ npm install
