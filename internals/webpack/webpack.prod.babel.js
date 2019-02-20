@@ -15,6 +15,10 @@ const isAnalyze = process.argv && process.argv.includes('--analyze');
     You can see below in "createPlugins" function that I have commented out "CommonsChunkPlugin" which doesn't work in webpack 4 (we moved from 3 to 4)
     and optimisation is handled now internaly and is configurable in "module.exports.optimisation".
 
+    Also, "extract-text-webpack-plugin" will throw exception if used with webpack 4 (Error: Chunk.entrypoints: Use Chunks.groupsIterable and filter by instanceof Entrypoint instead)
+    if we try to use current stable version of  "extract-text-webpack-plugin": "^3.0.2", and best solution is what devs say: "Since webpack v4 the
+    extract-text-webpack-plugin should not be used for css. Use mini-css-extract-plugin instead."
+    I decided to go against this, and installed beta version of "extract-text-webpack-plugin v4"
  */
 
 
