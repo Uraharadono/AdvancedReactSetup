@@ -8,14 +8,25 @@ const BundleAnalyzerPlugin = BundleAnalyzer.BundleAnalyzerPlugin;
 
 const isAnalyze = process.argv && process.argv.includes('--analyze');
 
+/* ************************************************ */
+/* ************** REALLY IMPORTANT NOTE************ */
+/* ************************************************ */
+/*
+    You can see below in "createPlugins" function that I have commented out "CommonsChunkPlugin" which doesn't work in webpack 4 (we moved from 3 to 4)
+    and optimisation is handled now internaly and is configurable in "module.exports.optimisation".
+
+ */
+
+
 function createPlugins() {
+
+    // const chunk = new webpack.optimize.SplitChunks({
     // const chunk = new webpack.optimize.CommonsChunkPlugin({
-    const chunk = new webpack.optimize.SplitChunks({
-        name: 'vendor',
-        children: true,
-        minChunks: 2,
-        async: true
-    });
+    //     name: 'vendor',
+    //     children: true,
+    //     minChunks: 2,
+    //     async: true
+    // });
 
     // Minify and optimize the index.html
     const html = new HtmlWebpackPlugin({
@@ -68,10 +79,11 @@ function createPlugins() {
     });
 
     const extract = new ExtractTextPlugin({
-        filename: '[name].[contenthash].css',
+        filename: '[name].[hash].css',
         allChunks: true
     });
-    const plugins = [chunk, html, extract];
+    // const plugins = [chunk, html, extract];
+    const plugins = [html, extract];
 
     return !isAnalyze ? plugins : plugins.concat(analyze);
 }
@@ -86,6 +98,18 @@ module.exports = require('./webpack.base.babel')({
     output: {
         filename: '[name].[chunkhash].js',
         chunkFilename: '[name].[chunkhash].chunk.js'
+    },
+
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendor',
+                    chunks: 'all'
+                }
+            }
+        }
     },
 
     plugins: createPlugins(),

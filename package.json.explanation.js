@@ -225,7 +225,10 @@ let Package_JSON_EXPLANATION = {
 
     // Extract text from a bundle, or bundles, into a separate file.
     // https://github.com/webpack-contrib/extract-text-webpack-plugin
-    "extract-text-webpack-plugin": "^3.0.2",
+    // HUGE NOTE: Since we are using webpack 4, and our production build will fail (Error: Chunk.entrypoints: Use Chunks.groupsIterable and filter by instanceof Entrypoint instead)
+    // if we try to use current stable version of  "extract-text-webpack-plugin": "^3.0.2", and best solution is what devs say: "Since webpack v4 the
+    // extract-text-webpack-plugin should not be used for css. Use mini-css-extract-plugin instead." I decided to go against this, and installed beta version
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
 
 
 

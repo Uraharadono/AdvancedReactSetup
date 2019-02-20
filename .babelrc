@@ -56,8 +56,8 @@
             ],
             "plugins": [
                 "transform-react-remove-prop-types",
-                "transform-react-constant-elements",
-                "transform-react-inline-elements"
+                "@babel/transform-react-constant-elements",
+                "@babel/plugin-transform-react-inline-elements"
             ]
         },
         "test": {
